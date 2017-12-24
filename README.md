@@ -1,8 +1,9 @@
 Slot Game
 =========
+
 ## Dependencies
-- Node.js v8.9 LTS or above
-- Yarn
+- [Node.js](https://nodejs.org/en/) v8.9 LTS or above
+- [Yarn](https://yarnpkg.com/en/)
 
 ## Run
     yarn
@@ -33,12 +34,12 @@ Code can be linted using ESLint with:
 ### Functional approach
 A functional approach is followed and pure functions without side-effects are used where possible, instead of objects and manipulating states. This makes the code easily comprehensible and testable as smaller units.
 
-### Tests
-Only back-end has tests now. Back-end tests cab be run with:
+## Tests
+Only back-end has tests now. Spec files are placed beside the modules they are testing, and named module.spec.js. Tests can be run with:
 
     yarn test
 
-### Browser compatibility
+## Browser compatibility
 **Conclusion:** Should work in all modern browsers, and IE from version 10 upwards (see *DOM* below).
 
 - **CSS** - The CSS styles used supports 92% of the global browser share, as checked with [browserl.ist](http://browserl.ist/?q=last%204%20version). This includes IE browsers from IE 8 upwards.
