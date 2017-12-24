@@ -17,7 +17,7 @@ function getRandomNumber() {
 /**
  * Decide randomly whether to give a bonus round or not.
  *
- * This function is intentionally kept simple and 'probably' so that the
+ * This function is intentionally kept simple and probable so that the
  * likelyhood of a use winning a bonus is not too few.
  *
  * @returns {boolean}

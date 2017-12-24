@@ -13,10 +13,10 @@
     "webpack": "^3.10.0"
   },
   "scripts": {
-    "webpack": "webpack",
     "start": "node src/main.js",
     "lint": "./node_modules/.bin/eslint src/**/\\*.js",
-    "lint-fix": "./node_modules/.bin/eslint src/**/\\*.js --fix"
+    "lint-fix": "./node_modules/.bin/eslint src/**/\\*.js --fix",
+    "webpack": "webpack"
   },
   "name": "game",
   "version": "1.0.0",

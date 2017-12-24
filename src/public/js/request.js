@@ -1,3 +1,9 @@
+/**
+ * Wrap XMLHttpRequest in a module to take advantage of promises
+ *
+ * @param {string} method - the HTTP verb
+ * @param {string} url - request URL
+ */
 function request(method, url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
