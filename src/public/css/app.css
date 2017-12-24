@@ -1,3 +1,7 @@
+/*
+ * The style rules used covers 92% of the global browser user share,
+ * as checked with http://browserl.ist/?q=last%204%20version.
+*/
 body {
   margin: 0;
   padding: 0;
@@ -60,15 +64,29 @@ body {
 }
 
 .rotate {
-  animation: rotation 1.75s infinite ease-in-out;
+  -webkit-animation: rotation 1.75s infinite ease-in-out;
+          animation: rotation 1.75s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+  }
 }
 
 @keyframes rotation {
   from {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
   }
   to {
-      transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
   }
 }
 
@@ -92,7 +110,9 @@ body {
   float: left;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 2em;
 }
 
