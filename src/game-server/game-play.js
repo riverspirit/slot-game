@@ -23,6 +23,8 @@ function getRandomNumber() {
  * @returns {boolean}
  */
 function calculateBonus() {
+  // Create a random digit and get the current timestamp. If the random digit
+  // is the same as the last digit in the timestamp, give a bonus round.
   const randomNumber = getRandomNumber();
   const timestampEntropy = (new Date()).getTime() % NUM_SYMBOLS;
 

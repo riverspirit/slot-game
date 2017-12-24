@@ -1,6 +1,6 @@
 /**
  * This is the router module that handles incoming requests and respond
- * to it by routing to the appropriate handler
+ * to it by routing to the appropriate handler.
  */
 
 const finalhandler = require('finalhandler');

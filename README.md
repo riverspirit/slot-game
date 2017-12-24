@@ -13,7 +13,7 @@ Uses Webpack to bundle the scripts. To build the bundle, do:
 
     yarn webpack
 
-PS: I haven't added a build step that creates a distributable version of the app and puts it in a folder.
+PS: I haven't added a build step that creates a separate distributable version of the app (which is usually put in a `dist` folder).
 
 ## Development
 
@@ -21,7 +21,7 @@ PS: I haven't added a build step that creates a distributable version of the app
 Uses vanilla JS in the front-end and back-end
 
 ### Coding standard
-Follows the Airbnb coding standards, with minor changes. Additionally, smaller functons with lower cyclomatic complexities are used, aiming to make code less buggy and easier to wrap the head around.
+Follows the [Airbnb JavaScript coding standard](https://github.com/airbnb/javascript/). Additionally, smaller functons with lower cyclomatic complexities are used, aiming to make code less buggy and easier to wrap the head around.
 
 Code can be linted using ESLint with:
 
@@ -30,8 +30,10 @@ Code can be linted using ESLint with:
     # auto-fix small issues such as missing semi-colons
     yarn lint-fix
 
-### Functional
-A functional approach is followed and pure functions without side-effects are used where possible, instead of objects manipulating states. This makes the code easily comphrehensible and testable independently.
+### Functional approach
+A functional approach is followed and pure functions without side-effects are used where possible, instead of objects and manipulating states. This makes the code easily comphrehensible and testable as smaller units.
 
 ### Tests
-Only back-end has tests now.
+Only back-end has tests now. Back-end tests cab be run with:
+
+    yarn test
