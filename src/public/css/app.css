@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.play-button {
+  background: url('../images/button.png') no-repeat;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-size: contain;
+  border: none;
+}
+
+.slot {
+  width: 115px;
+  height: 76px;
+  display: inline-block;
+}
+
+.symbol-0 {
+  background: url('../images/Symbol_0.png');
+  background-size: contain;
+}
+
+.symbol-1 {
+  background: url('../images/Symbol_1.png');
+  background-size: contain;
+}
+
+.symbol-2 {
+  background: url('../images/Symbol_2.png');
+  background-size: contain;
+}
+
+.symbol-3 {
+  background: url('../images/Symbol_3.png');
+  background-size: contain;
+}
+
+.symbol-4 {
+  background: url('../images/Symbol_4.png');
+  background-size: contain;
+}
+
+.symbol-5 {
+  background: url('../images/Symbol_5.png');
+  background-size: contain;
+}
+
+.outcome {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 11px;
+  font-family: sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.rotate {
+  animation: rotation 1.75s infinite ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+
+.bonus-round {
+  position: absolute;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  z-index: 10;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  position: relative;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+.controls {
+  text-align: center;
+}
+
+.dim {
+  opacity: 0.2;
+}
